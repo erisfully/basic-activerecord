@@ -6,4 +6,4 @@ require "./lib/order"
 require "awesome_print"
 
 
-ap Customer.order(name: :asc)
+ap Customer.order(name: :desc)
