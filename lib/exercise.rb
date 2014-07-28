@@ -6,4 +6,4 @@ require "./lib/order"
 require "awesome_print"
 
 
-ap Order.maximum("amount")
+ap Order.group(:customer_id).minimum("amount")
