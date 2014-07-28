@@ -6,4 +6,4 @@ require "./lib/order"
 require "awesome_print"
 
 
-ap Item.find_by(name: 'kayak01').destroy
+ap Order.group(:customer_id).sum(:amount)
