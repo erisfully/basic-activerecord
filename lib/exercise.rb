@@ -6,6 +6,10 @@ require "./lib/order"
 require "awesome_print"
 
 
-ap Order.joins(:items, :orderitems, :customer).select('customers.name').where("items.name = 'bike03'").to_sql
+ap Order.joins(:items, :orderitems, :customer).select('sum(amount)').group('customers.id').where("customers.name = 'Evert Pfeffer'").where("items.name = 'bike03'").to_sql
+
+
+
+
 
 
