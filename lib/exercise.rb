@@ -5,4 +5,4 @@ require "./lib/orderitem"
 require "./lib/order"
 
 
-p Customer.last
+p Customer.find(3)
