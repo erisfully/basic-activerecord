@@ -3,6 +3,7 @@ require "./lib/customer"
 require "./lib/item"
 require "./lib/orderitem"
 require "./lib/order"
+require "awesome_print"
 
 
-p Customer.where(state: "Colorado")
+ap Customer.limit(5)
