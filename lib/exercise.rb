@@ -6,7 +6,7 @@ require "./lib/order"
 require "awesome_print"
 
 
-item = Item.find_by(description: "snow board")
-item.update(
-  name: "board01"
-)
+ap Item.create(
+  name: 'kayak01',
+  description: "one person river kayak"
+                   )
