@@ -5,4 +5,4 @@ require "./lib/orderitem"
 require "./lib/order"
 
 
-p Customer.find(3)
+p Customer.where(state: "Colorado")
