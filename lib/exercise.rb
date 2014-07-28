@@ -6,4 +6,4 @@ require "./lib/order"
 require "awesome_print"
 
 
-ap Customer.select(:name, :email)
+ap Customer.select(:id, :name, :address)
