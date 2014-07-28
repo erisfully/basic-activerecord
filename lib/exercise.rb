@@ -6,4 +6,7 @@ require "./lib/order"
 require "awesome_print"
 
 
-ap Customer.where("state = 'Virginia' OR state = 'Ohio'")
+item = Item.find_by(description: "snow board")
+item.update(
+  name: "board01"
+)
