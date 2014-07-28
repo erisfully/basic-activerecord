@@ -6,4 +6,4 @@ require "./lib/order"
 require "awesome_print"
 
 
-ap Item.all
+ap Item.where("name LIKE 'boot%'")
