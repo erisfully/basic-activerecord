@@ -6,4 +6,4 @@ require "./lib/order"
 require "awesome_print"
 
 
-ap Customer.where("state = 'Colorado'").where("city = 'Rigobertoside'")
+ap Customer.where("state = 'Virginia' OR state = 'Ohio'")
