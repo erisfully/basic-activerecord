@@ -6,7 +6,4 @@ require "./lib/order"
 require "awesome_print"
 
 
-ap Item.create(
-  name: 'kayak01',
-  description: "one person river kayak"
-                   )
+ap Item.find_by(name: 'kayak01').destroy
