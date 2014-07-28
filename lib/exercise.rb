@@ -6,4 +6,4 @@ require "./lib/order"
 require "awesome_print"
 
 
-ap Order.joins(:customer).select('customers.id, customers.name, avg(amount)').group('name, customers.id').order("name ASC")
+ap Order.joins(:customer).select('customers.id, customers.name, round(avg(amount), 2)').group('name, customers.id').order("name ASC")
