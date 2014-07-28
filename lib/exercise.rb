@@ -6,4 +6,4 @@ require "./lib/order"
 require "awesome_print"
 
 
-ap Order.sum("amount")
+ap Order.where(customer_id: 1).sum("amount")
